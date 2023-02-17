@@ -27,34 +27,19 @@ An example of environment variabes is included needed for duplication `.env.exam
 ### Project start
 
 #### Install Dependencies
-1. Get Yarn
-``
-    npm -g install yarn
-``
-2. Install Dependencies
-``
-yarn install
-``
-3. Compiles for development
-``
-yarn serve
-``
-4. Compiles and minifies for production
-``
-yarn build
-``
-5. Lints and fixes files
-``
-yarn lint
-``
-## Docker
-This project has been dockerized for purpose of deployment, so proceed with steps below if you consider deploying with docker
 
-#### Build Docker Image
-```
-docker build . -t app-ui/health-frontend
-docker run -it -p 8080:80 --env-file=.env --rm --name health-frontend-ui app-ui/health-frontend
-```
+1. Install Dependencies
+``
+npm install
+``
+2. Compiles for development
+``
+npm start
+``
+3. Compiles and minifies for production
+``
+npm build
+``
 
 ## Contributing to the Project
 
