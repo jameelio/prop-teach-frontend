@@ -14,7 +14,7 @@ import {
 
 import { FaBath, FaCar, FaHome } from 'react-icons/fa';
 
-const BACKEND_API = 'https://0bykjr7fn1.execute-api.eu-west-1.amazonaws.com/dev'
+const BACKEND_API = process.env.REACT_APP_BACKEND_API
 
 function PropertyCard() {
     const [properties, setProperties] = useState([]);
