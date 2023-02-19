@@ -1,25 +1,12 @@
 import React from 'react';
-import {
-  ChakraProvider,
-  Box,
-  Grid,
-  theme,
-  VStack,
-} from '@chakra-ui/react';
+import { ChakraProvider, theme } from '@chakra-ui/react';
 
-import PropertyCard from "./components/PropertyCard"
+import { Main } from './components/Main'
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <VStack spacing={8}>
-            <PropertyCard />
-          </VStack>
-        </Grid>
-      </Box>
+      <Main />
     </ChakraProvider>
   );
 }
